@@ -18,7 +18,7 @@ Some code based off of <a href="https://github.com/steasdal/ddclient-alpine">ste
 ## Usage
 
 - Clone the repository
-- Customize the parameters in the terraform.tfvars file as applicable for provisioning. Includes DDClient <a href="https://sourceforge.net/p/ddclient/wiki/usage/">config</a> as well as Persistent Volume config. See note in terraform.tfvars regarding base64 Secrets encoding differences from native Kubernetes secrets.
+- Customize the parameters in the terraform.tfvars file as applicable for provisioning. Includes DDClient <a href="https://sourceforge.net/p/ddclient/wiki/usage/">config</a> as well as Persistent Volume config. See note in terraform.tfvars regarding base64 Secrets encoding differences from native Kubernetes secrets; also blurb on <a href="https://www.terraform.io/docs/state/sensitive-data.html">Terraform Sensitive Data in State</a>.
 - Run <code>terraform init</code> (required for first run to pull Kubernetes provider). 
 - Apply the configuration:
 
